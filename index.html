@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OralScan</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header animate__animated animate__fadeIn">
+    <h1>OralScan</h1>
+    <p>AI-Powered Accessible Dental Care for Older Adults</p>
+  </header>
+
+  <!-- Problem Section -->
+  <section class="section" id="problem">
+    <h2>Problem: Lack of Accessible Preventive Dental Care</h2>
+    <div class="content">
+      <p><strong>Who:</strong> Seniors who cannot access regular oral healthcare.</p>
+      <p><strong>Where:</strong> Widespread issue but particularly prevalent in rural or low-income areas.</p>
+      <p><strong>Why:</strong> Financial, geographic, and systemic barriers, as well as limitations in Medicare coverage.</p>
+      <h3>Statistics and Data</h3>
+      <ul>
+        <li>96% of seniors experience dental caries (cavities).</li>
+        <li>20% of seniors suffer from untreated dental decay.</li>
+        <li>68% of older adults have periodontal (gum) disease, a major cause of tooth loss.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="section animate__animated animate__fadeIn" id="solution">
+    <h2>Solution: OralScan - AI-Powered App for Accessible Dental Care</h2>
+    <div class="feature-grid">
+      <div class="feature-item animate__animated animate__zoomIn">
+        <img src="images/ai-diagnostics.jpg" alt="AI Diagnostics">
+        <h3>AI-Powered Diagnostics</h3>
+        <p>Leverages advanced AI models to diagnose oral issues with precision.</p>
+      </div>
+      <div class="feature-item animate__animated animate__zoomIn">
+        <img src="images/mobile-accessibility.jpg" alt="Mobile Accessibility">
+        <h3>Mobile Accessibility</h3>
+        <p>Accessible on both Android and iOS for remote healthcare monitoring.</p>
+      </div>
+      <div class="feature-item animate__animated animate__zoomIn">
+        <img src="images/tailored-recommendations.jpg" alt="Tailored Recommendations">
+        <h3>Tailored Recommendations</h3>
+        <p>Personalized care suggestions to empower self-care at home.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Early Conceptual Design Section -->
+  <section class="section animate__animated animate__fadeIn" id="conceptual-design">
+    <h2>Early Conceptual Design</h2>
+    <p>We have developed a conceptual prototype of a mobile app for photo capture and integrated AI models with dental professionals. As shown in the figure below, the app consists of two main components: a front-end application that interacts with the user and a back-end server responsible for authentication, secure data storage, and analysis of the data.</p>
+    <ul>
+      <li>The front-end app is developed using React Native, supporting both Android and iOS platforms.</li>
+      <li>Users enter clinical information and capture images via guided prompts.</li>
+      <li>AI-based models detect regions of interest (e.g., caries, ulcers) and segment the objects in less than 5 seconds.</li>
+    </ul>
+    <p>The back-end server handles AI model processing, securely stores data, and ensures privacy.</p>
+  </section>
+
+  <!-- Aim and Development Plan Section -->
+  <section class="section animate__animated animate__fadeIn" id="development-plan">
+    <h2>Aim and Development Plan</h2>
+    <h3>AI Algorithm Development</h3>
+    <p>We are developing a neural network algorithm that incorporates oral images to predict the risk of oral diseases by leveraging models like YOLO and SAM. Image features will be extracted using a ResNet50-based CNN.</p>
+    <h3>Secure Server and Fairness Assessment</h3>
+    <p>The server will handle tasks like segmentation, prediction model training, and secure data storage. We will also focus on fairness assessment through demographic representation analysis and bias mitigation techniques.</p>
+    <h3>Web-Based Dashboard</h3>
+    <p>A dashboard will allow administrative users to monitor system performance, bug reports, and user feedback in real-time, pulling data from the server's relational database.</p>
+  </section>
+
+  <!-- Demo Video Section -->
+  <section class="section animate__animated animate__fadeIn" id="demo">
+    <h2>Demo Video</h2>
+    <div class="demo-video">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demo Video" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section animate__animated animate__fadeIn" id="faq">
+      <div class="faq-container">
+        <h2>FAQs</h2>
+    
+        <div class="faq">
+          <button class="faq-btn">What has the project accomplished?</button>
+          <div class="faq-content">
+            <p>OralScan combines AI-driven diagnostics with a user-friendly mobile platform tailored for seniors and underserved populations. It uses smartphone cameras to capture intraoral images, enabling detection of oral health issues like cavities, gingivitis, and ulcers. It bridges healthcare gaps by providing real-time diagnostic feedback and self-care recommendations or professional care alerts.</p>
+          </div>
+        </div>
+    
+        <div class="faq">
+          <button class="faq-btn">Why is your project new, and what challenges/obstacles has the team overcome?</button>
+          <div class="faq-content">
+            <p>OralScan integrates advanced AI diagnostics with mHealth accessibility, focusing on equity. Challenges like consistent image quality and biases in AI algorithms were addressed with advanced image quality assessments and fairness-aware AI, ensuring reliable diagnostics across diverse demographics.</p>
+          </div>
+        </div>
+    
+        <div class="faq">
+          <button class="faq-btn">Is there any similar product or prototype already in existence?</button>
+          <div class="faq-content">
+            <p>Existing solutions like telemedicine apps and AI tools (e.g., AICaries9) focus on specific aspects but lack comprehensive oral health screening. OralScan fills this gap with robust datasets and real-time, at-home assessments.</p>
+          </div>
+        </div>
+    
+        <div class="faq">
+          <button class="faq-btn">What are the significant technological and societal impacts?</button>
+          <div class="faq-content">
+            <p><strong>Technological Impact:</strong> Real-time diagnostics, unique datasets, and EHR integration enable remote patient monitoring and optimize resources.</p>
+            <p><strong>Societal Impact:</strong> Empowers underserved populations with accessible tools, encourages proactive oral health behaviors, and promotes healthcare equity.</p>
+          </div>
+        </div>
+    
+        <div class="faq">
+          <button class="faq-btn">What are the specific contributions of each student?</button>
+          <div class="faq-content">
+            <ul>
+              <li><strong>Wei Bo:</strong> Data preparation, detailed annotation.</li>
+              <li><strong>Alexander Gherardi:</strong> Data review and annotation decisions.</li>
+              <li><strong>Puru Soni:</strong> AI model development and Web API setup.</li>
+              <li><strong>Kritarth Dandapat:</strong> App development and UI testing.</li>
+              <li><strong>Dr. Rui Li's Team:</strong> Medical knowledge and annotation guidance.</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="faq">
+          <button class="faq-btn">What is the project plan for the next step?</button>
+          <div class="faq-content">
+            <p>Conduct usability testing, refine app features, and integrate EHR systems. The commercialization strategy includes partnerships with healthcare providers and community organizations, licensing agreements, and outreach to investors.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact animate__animated animate__fadeIn" id="contact">
+    <h2>Join Us</h2>
+    <p>Contact us for more information:</p>
+    <p>Email: purusoni@buffalo.edu | kritarth@buffalo.edu</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer animate__animated animate__fadeIn">
+    <p>&copy; 2024 OralScan. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
