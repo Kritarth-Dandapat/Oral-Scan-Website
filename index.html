@@ -1,72 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OralScan</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+    <title>OralScan | AI-Powered Dental Care</title>
+  </head>
 <body>
-  <!-- Header Section -->
-  <header class="header animate__animated animate__fadeIn">
-    <h1>OralScan</h1>
-    <p>AI-Powered Accessible Dental Care for Older Adults</p>
-  </header>
+    <div class="container">
+      <!-- Navigation -->
+      <nav class="nav">
+        <div class="nav__logo">OralScan</div>
+        <ul class="nav__links">
+          <li class="nav__item"><a href="#overview">Overview</a></li>
+          <li class="nav__item"><a href="#features">Features</a></li>
+          <li class="nav__item"><a href="#how-it-works">How it Works</a></li>
+          <li class="nav__item"><a href="#benefits">Benefits</a></li>
+          <li class="nav__item"><a href="#download">
+           <button class="download_btn">Download</button>
+          </a></li>
+        </ul>
+      </nav>
+      
+      <!-- Header Section -->
+      <header class="header">
+        <div class="header__content">
+          <h1>AI-Powered Accessible Dental Care for Older Adults</h1>
+          <p>
+            OralScan uses advanced AI to detect oral health issues, providing real-time diagnostics and personalized care recommendations for seniors who cannot access regular dental care.
+          </p>
+          <button class="btn">Learn More</button>
+        </div>
+        <div class="header__image">
+          <span class="image__bg"></span>
+          <img src="images/header-bg.png" alt="Dental care illustration" />
+        </div>
+      </header>
 
-  <!-- Problem Section -->
-  <section class="section" id="problem">
-    <h2>Problem: Lack of Accessible Preventive Dental Care</h2>
-    <div class="content">
-      <p><strong>Who:</strong> Seniors who cannot access regular oral healthcare.</p>
-      <p><strong>Where:</strong> Widespread issue but particularly prevalent in rural or low-income areas.</p>
-      <p><strong>Why:</strong> Financial, geographic, and systemic barriers, as well as limitations in Medicare coverage.</p>
-      <h3>Statistics and Data</h3>
-      <ul>
-        <li>96% of seniors experience dental caries (cavities).</li>
-        <li>20% of seniors suffer from untreated dental decay.</li>
-        <li>68% of older adults have periodontal (gum) disease, a major cause of tooth loss.</li>
-      </ul>
-    </div>
-  </section>
+      <!-- Overview Section -->
+      <section id="overview" class="section overview">
+        <h2>Accessible Dental Care Solution</h2>
+        <div class="overview__image">
+          <img src="images/overview.png" alt="Overview of OralScan" />
+        </div>
+        <div class="content">
+          <p><strong>Who:</strong> Seniors who cannot access regular oral healthcare.</p>
+          <p><strong>Where:</strong> Widespread issue but particularly prevalent in rural or low-income areas.</p>
+          <p><strong>Why:</strong> Financial, geographic, and systemic barriers, as well as limitations in Medicare coverage.</p>
+        </div>
+      </section>
 
-  <!-- Solution Section -->
-  <!-- <section class="section animate__animated animate__fadeIn" id="solution">
-    <h2>Solution: OralScan - AI-Powered App for Accessible Dental Care</h2>
-    <div class="feature-grid">
-      <div class="feature-item animate__animated animate__zoomIn">
-        <img src="images/ai-diagnostics.png" alt="AI Diagnostics">
-        <h3>AI-Powered Diagnostics</h3>
-        <p>Leverages advanced AI models to diagnose oral issues with precision.</p>
-      </div>
-      <div class="feature-item animate__animated animate__zoomIn">
-        <img src="images/mobile-accessibility.png" alt="Mobile Accessibility">
-        <h3>Mobile Accessibility</h3>
-        <p>Accessible on both Android and iOS for remote healthcare monitoring.</p>
-      </div>
-      <div class="feature-item animate__animated animate__zoomIn">
-        <img src="images/tailored-recommendations.png" alt="Tailored Recommendations">
-        <h3>Tailored Recommendations</h3>
-        <p>Personalized care suggestions to empower self-care at home.</p>
-      </div>
-    </div>
-  </section> -->
+      <!-- Features Section -->
+      <section id="features" class="section features">
+        <h2>Advanced Features for Better Care</h2>
+        <div class="features__list">
+          <div class="feature__item">
+            <h3>AI-Powered Diagnostics</h3>
+            <p>Leverages advanced AI models to diagnose oral issues with precision and accuracy.</p>
+          </div>
+          <div class="feature__item">
+            <h3>Mobile Accessibility</h3>
+            <p>Available on both Android and iOS platforms for convenient remote healthcare monitoring.</p>
+          </div>
+          <div class="feature__item">
+            <h3>Smart Analysis</h3>
+            <p>Detect regions of interest like caries and ulcers with AI-based segmentation in under 5 seconds.</p>
+          </div>
+        </div>
+      </section>
 
-  <!-- Early Conceptual Design Section -->
-  <section class="section animate__animated animate__fadeIn" id="conceptual-design">
-    <h2>Early Conceptual Design</h2>
-    <p>We have developed a conceptual prototype of a mobile app for photo capture and integrated AI models with dental professionals. As shown in the figure below, the app consists of two main components: a front-end application that interacts with the user and a back-end server responsible for authentication, secure data storage, and analysis of the data.</p>
-    <ul>
-      <li>The front-end app is developed using React Native, supporting both Android and iOS platforms.</li>
-      <li>Users enter clinical information and capture images via guided prompts.</li>
-      <li>AI-based models detect regions of interest (e.g., caries, ulcers) and segment the objects in less than 5 seconds.</li>
-    </ul>
-    <p>The back-end server handles AI model processing, securely stores data, and ensures privacy.</p>
-  </section>
+      <!-- How It Works Section -->
+      <section id="how-it-works" class="section how-it-works">
+       <h2>How It Works</h2>
+       <div class="how-it-works__steps">
+         <div class="step">
+           <img src="images/step1-icon.png" alt="Capture Image">
+           <div class="step__content">
+             <h3>Record Consultation</h3>
+             <p>Take photos of oral conditions using our guided camera system.</p>
+           </div>
+           <span>1</span>
+         </div>
+         <div class="step">
+           <img src="images/step2-icon.png" alt="AI Analysis">
+           <div class="step__content">
+             <h3>AI Processing</h3>
+             <p>Our advanced AI analyzes the images for potential health issues.</p>
+           </div>
+           <span>2</span>
+         </div>
+         <div class="step">
+           <img src="images/step3-icon.png" alt="Get Results">
+           <div class="step__content">
+             <h3>Get Results</h3>
+             <p>Receive instant feedback and personalized care recommendations.</p>
+           </div>
+           <span>3</span>
+         </div>
+       </div>
+     </section>
+     
+      <!-- Benefits Section -->
+      <section id="benefits" class="section benefits">
+        <h2>Key Benefits</h2>
+        <div class="benefits__list">
+          <div class="benefit__item">
+            <h4>Early Detection</h4>
+            <p>Identify oral health issues before they become serious problems.</p>
+          </div>
+          <div class="benefit__item">
+            <h4>Accessibility</h4>
+            <p>Access dental care guidance from anywhere, anytime.</p>
+          </div>
+          <div class="benefit__item">
+            <h4>Cost-Effective</h4>
+            <p>Reduce healthcare costs through preventive care.</p>
+          </div>
+          <div class="benefit__item">
+            <h4>Quick Results</h4>
+            <p>Get instant analysis and recommendations in seconds.</p>
+          </div>
+        </div>
+      </section>
 
   <!-- Aim and Development Plan Section -->
   <section class="section animate__animated animate__fadeIn" id="development-plan">
-    <h2>Aim and Development Plan</h2>
+    <h2>AIM and Development Plan</h2>
     <h3>AI Algorithm Development</h3>
     <p>We are developing a neural network algorithm that incorporates oral images to predict the risk of oral diseases by leveraging models like YOLO and SAM. Image features will be extracted using a ResNet50-based CNN.</p>
     <h3>Secure Server and Fairness Assessment</h3>
@@ -75,7 +140,6 @@
     <p>A dashboard will allow administrative users to monitor system performance, bug reports, and user feedback in real-time, pulling data from the server's relational database.</p>
   </section>
 
-  <!-- Demo Video Section -->
   <!-- Demo Video Section -->
 <section class="section animate__animated animate__fadeIn" id="demo">
   <h2>Demo Video</h2>
@@ -109,7 +173,7 @@
 
 
   <!-- FAQ Section -->
-  <section class="section animate__animated animate__fadeIn" id="faq">
+  <!-- <section class="section animate__animated animate__fadeIn" id="faq">
       <div class="faq-container">
         <h2>FAQs</h2>
     
@@ -162,19 +226,117 @@
           </div>
         </div>
       </div>
-  </section>
+  </section> -->
 
   <!-- Contact Section -->
   <section class="section contact animate__animated animate__fadeIn" id="contact">
-    <h2>Join Us</h2>
-    <p>Contact us for more information:</p>
-    <p>Email: wenyaoxu@buffalo.edu | ajgherar@buffalo.edu | weibo@buffalo.edu | purusoni@buffalo.edu | kritarth@buffalo.edu</p>
+    <div class="contact-content">
+      <h2>Join Us</h2>
+      <p>Contact us for more information:</p>
+  
+      <div class="contact-cards">
+        <!-- Card 1 -->
+        <div class="contact-card">
+          <img src="images/team-member1.jpg" alt="Wei Bo" class="contact-card-img">
+          <div class="contact-card-content">
+            <h3>Wei Bo</h3>
+            <!-- <p>Data preparation, detailed annotation.</p> -->
+            <a href="mailto:weibo@buffalo.edu">Email: weibo@buffalo.edu</a>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="contact-card">
+          <img src="images/team-member2.jpg" alt="Alexander Gherardi" class="contact-card-img">
+          <div class="contact-card-content">
+            <h3>Alexander Gherardi</h3>
+            <p>Data review and annotation decisions.</p>
+            <a href="mailto:ajgherar@buffalo.edu">Email: ajgherar@buffalo.edu</a>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="contact-card">
+          <img src="images/team-member3.jpg" alt="Puru Soni" class="contact-card-img">
+          <div class="contact-card-content">
+            <h3>Puru Soni</h3>
+            <p>AI model development and Web API setup.</p>
+            <a href="mailto:purusoni@buffalo.edu">Email: purusoni@buffalo.edu</a>
+          </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="contact-card">
+          <img src="images/team-member4.jpg" alt="Kritarth Dandapat" class="contact-card-img">
+          <div class="contact-card-content">
+            <h3>Kritarth Dandapat</h3>
+            <p>App development and UI testing.</p>
+            <a href="mailto:kritarth@buffalo.edu">kritarth@buffalo.edu</a>
+          </div>
+        </div>
+  
+        <!-- Card 5 -->
+        <div class="contact-card">
+          <img src="images/team-member5.jpg" alt="Dr. Rui Li's Team" class="contact-card-img">
+          <div class="contact-card-content">
+            <h3>Dr. Rui Li's Team</h3>
+            <p>Medical knowledge and annotation guidance.</p>
+            <a href="mailto:kritarth@buffalo.edu">N/A</a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <img src="images/team-member1.jpg" alt="Wenyao Xu" class="contact-card-img">
+          <div class="contact-card-content">
+            <h3>Wenayo Xu</h3>
+            <p>Supervising Professor</p>
+            <a href="mailto:wenyaoxu@buffalo.edu">Email: wenyaoxu@buffalo.edu</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+  
+  
 
-  <!-- Footer -->
-  <footer class="footer animate__animated animate__fadeIn">
-    <p>&copy; 2025 OralScan. All rights reserved.</p>
-  </footer>
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__column footer__about">
+            <h4>About OralScan</h4>
+            <p>OralScan provides AI-powered dental diagnostics and care recommendations to enhance healthcare accessibility for seniors.</p>
+          </div>
 
-</body>
+          <div class="footer__column footer__links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#overview">Overview</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#benefits">Benefits</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column footer__contact">
+            <h4>Contact Us</h4>
+            <p>Email: <a href="mailto:contact@oralscan.com">contact@oralscan.com</a></p>
+            <p>Phone: +1 716 123 4567</p>
+            <p>Address: University at Buffalo, NY</p>
+          </div>
+
+          <div class="footer__column footer__social">
+            <h4>Follow Us</h4>
+            <div class="footer__social-links">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+            </div>
+          </div>
+
+
+        <p class="footer__copyright">&copy; 2025 OralScan. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
 </html>
