@@ -100,7 +100,7 @@ body {
 
 /* Main Container */
 .container {
-  /* max-width: 1300px; */
+  max-width: 2000px;
   margin: 0 auto;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1188,5 +1188,210 @@ body {
 
   .footer__newsletter button {
     width: 30%;
+  }
+}
+
+@media (max-width: 900px) {
+  /* Navigation Bar */
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  /* Header */
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 7rem 2rem 4rem;
+  }
+
+  .header h1 {
+    font-size: 2.8rem;
+  }
+
+  /* Section */
+  .section {
+    padding: 5rem 2rem;
+  }
+
+  .section h2 {
+    font-size: 2.2rem;
+  }
+
+  .feature__item {
+    padding: 20px;
+  }
+
+  .feature__item img {
+    height: 200px;
+  }
+
+  /* Overview Section */
+  .overview {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .overview__image {
+    max-width: 100%;
+  }
+
+  .overview .content {
+    max-width: 100%;
+  }
+
+  /* FAQ Section */
+  .faq-container {
+    margin-top: 2rem;
+  }
+
+  /* FAQ Item */
+  .faq {
+    margin-bottom: 1.5rem;
+  }
+
+  .faq-btn {
+    padding: 1.5rem;
+  }
+
+  .faq-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Main Container */
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  /* Header */
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Buttons */
+  .download_btn,
+  .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  /* Features Section */
+  .features__list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .feature__item img {
+    height: 180px;
+  }
+
+  /* How It Works Section */
+  .how-it-works__steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  /* App Store Links */
+  .app-store-links {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Header */
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  /* Sections */
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+  }
+
+  .feature__item img {
+    height: 180px;
+  }
+
+  /* Features Section */
+  .features__list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Buttons */
+  .download_btn,
+  .btn {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  /* FAQ */
+  .faq-btn {
+    font-size: 1.1rem;
+  }
+
+  .faq-content {
+    padding: 1rem;
+  }
+
+  /* App Store Links */
+  .store-link img {
+    max-width: 180px;
+  }
+  .nav__links {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Further Adjustments for Small Screens */
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .feature__item img {
+    height: 160px;
+  }
+
+  .step img {
+    width: 120px;
+  }
+
+  .store-link img {
+    max-width: 150px;
+  }
+
+  .btn {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .download_btn {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+  }
+
+  /* Hide some unnecessary content on very small screens */
+  .nav__links {
+    display: none;
   }
 }
