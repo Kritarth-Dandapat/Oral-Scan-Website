@@ -32,7 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
+  padding: 1.0rem 2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -113,8 +113,10 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
   align-items: center;
-  padding: 10rem 0 6rem;
+  padding: 10rem 2rem 6rem;
   background: linear-gradient(135deg, var(--background) 60%, var(--light-background) 60%);
+
+  width: 100%;
 }
 
 .header__content {
