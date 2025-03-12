@@ -1,14 +1,13 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const faqItems = document.querySelectorAll(".faq-item");
 
-// JavaScript for accordion effect
-const faqBtns = document.querySelectorAll('.faq-btn');
-
-faqBtns.forEach(button => {
-  button.addEventListener('click', () => {
-    const content = button.nextElementSibling;
-    button.classList.toggle('active');
-    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  faqItems.forEach(item => {
+    item.addEventListener("click", function () {
+      this.classList.toggle("active");
+    });
   });
 });
+
 
 let currentIndex = 0;
 const slides = document.querySelector('.carousel');
